@@ -32,6 +32,5 @@ public class AutoConver {
                 System.out.println( ch );
                 System.out.println( chNum );
 
-
         }
 }
