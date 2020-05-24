@@ -7,6 +7,9 @@ public class AutoConver {
                 long longVal2 = intVal + 1;
                 System.out.println( longVal2 ) ;
 
+
+
+
                 float floatVal = 11.32f ;
                 double doubleVal = floatVal ;
                 double doubleVal2 = floatVal  * 2 ;
