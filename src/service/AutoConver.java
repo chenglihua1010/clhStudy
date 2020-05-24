@@ -38,6 +38,8 @@ public class AutoConver {
 
 
 
+
+
                 char ch = 'A';
                 int chNum = ch ;
                 int chNumCalc = ch + 10;
