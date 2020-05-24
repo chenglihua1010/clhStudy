@@ -26,17 +26,6 @@ public class AutoConver {
                 int a = 99 ;
                 double b = 5 ;
                 System.out.println( a / b );
-
-
-
-
-
-
-
-
-
-
-
                 char ch = 'A';
                 int chNum = ch ;
                 int chNumCalc = ch + 10;
