@@ -31,6 +31,5 @@ public class AutoConver {
                 int chNumCalc = ch + 10;
                 System.out.println( ch );
                 System.out.println( chNum );
-
         }
 }
