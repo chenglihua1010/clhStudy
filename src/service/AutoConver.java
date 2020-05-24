@@ -20,14 +20,11 @@ public class AutoConver {
 
                 floatVal = intVal ;
                 floatVal = longVal ;
-
                 int c = 99 ;
                 int d = 5 ;
-
                 System.out.println( c / d );
                 int a = 99 ;
                 double b = 5 ;
-
                 System.out.println( a / b );
 
 
