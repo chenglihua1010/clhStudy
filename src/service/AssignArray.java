@@ -13,7 +13,6 @@ public class AssignArray {
                 System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
                 System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
                 System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
 
         }
 }
