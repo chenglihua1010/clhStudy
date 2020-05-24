@@ -8,14 +8,7 @@ public class AssignArray {
                 book= new int[32];//book指向新的32的数组
                 System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
 
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
-                System.out.println("book长度为"+book.length +"。book[0]="+book[0]);
+
+
         }
 }
