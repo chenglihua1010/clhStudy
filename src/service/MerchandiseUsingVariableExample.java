@@ -9,7 +9,7 @@ public class MerchandiseUsingVariableExample {
         String id;
         int count;
         double price;
-        //<<TODO 上面着整个类，其实就是创建了一个模板，描述了一种我们需要的数据类型。
+        //<<TODO 上面这整个类，其实就是创建了一个模板，描述了一种我们需要的数据类型。
 
 
 
