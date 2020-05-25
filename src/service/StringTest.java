@@ -30,22 +30,22 @@ public class  StringTest {
 //                System.out.println(c);
 
                 String j="123";
-                Integer  a=1111111111;
-               Double b=11.11;
-                Short c=11;
-                Long d=11L;
-                Float e=11.1F;
-                Byte f='a';
-                Byte g=1;
+//                Integer  a=1111111111;
+//               Double b=11.11D;
+//                Short c=11;
+//                Long d=11L;
+//                Float e=11.1F;
+//                Byte f='a';
+//                Byte g=1;
 
                long p=1;
                 int pp=(int)p;
 
-                System.out.println(b.getClass());
-                System.out.println(c.getClass() );
-                System.out.println(d.getClass() );
-                System.out.println(e.getClass() );
-                System.out.println(f.getClass());
+//                System.out.println(b.getClass());
+//                System.out.println(c.getClass() );
+//                System.out.println(d.getClass() );
+//                System.out.println(e.getClass() );
+//                System.out.println(f.getClass());
 
 
                 StringTest stringTest=new StringTest();
