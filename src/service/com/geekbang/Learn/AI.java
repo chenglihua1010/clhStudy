@@ -14,21 +14,24 @@ public class AI {
                         boolean replied = false ;
 
                         String[] canStart = new String[] {"会","能","有","敢","在"};
-                        for (int i = 0 ;i <canStart .length ; i++){
+                        for (int i = 0 ;i <canStart .length && (!replied ); i++){
                                 if (input .startsWith(canStart [i]) ){
-                                        System.out.println(canStart [i]+"!");
+                                        System.out.println(canStart [i]+"!");//？？？？？
                                         replied = true;
                                         break;
                                 }
                         }
                         String[] askTail = new String[]{"吗？","吗？","吗"};
-                        for (int i = 0;i <args .length ;i++){
+                        for (int i = 0;i <args .length &&(!replied );i++){
                                 if (input.endsWith(askTail [i]) ){
 //                                        System.out.println(input.replace(askTail [i],replacement:"!") );
                                         System.out.println(input.replace(askTail [i],"!") );
                                         replied = true;
                                         break;
                                 }
+                        }
+                        if(!replied ){
+                                System.out.println(input +"!");
                         }
                 }
         }
