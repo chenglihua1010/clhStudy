@@ -25,14 +25,14 @@ import java.util.Scanner;
                         m.id = "ID" + i;
                         m.name = "商品" + i;
                         m.purchasePrice = Math.random() * 200;
-                        m.soldprice = (1 + Math.random()) * m.purchasePrice;
+                        m.soldPrice = (1 + Math.random()) * m.purchasePrice;
                         //用创建的商品，给商品数组的第i个引用赋值，all和小超市的数组引用指向的是同一数组对象
                         all[i] = m;
                 }
                 System.out.println("LittleSuperMarket的对象是" + littleSuperMarket);
                 System.out.println("下面请利润最高的商品自我介绍：");
                 MerchandiseV2 m = littleSuperMarket.getBiggestProfitMerchandise();
-                m.describ();
+                m.describe();
                 System.out.println("利润最高的MerchandiseV2的对象是：" + m);
                 if (!m.hasEnoughCountFor(500)) {
                         System.out.println("补充库存");

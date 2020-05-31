@@ -17,14 +17,14 @@ public class RunLittleSupperMarketAppMainV2 {
                         giftNoodle.name = "赠品-面条";
                         giftNoodle.count = 2000;
                         giftNoodle.purchasePrice = 5;
-                        giftNoodle.soldprice = 0.05;
+                        giftNoodle.soldPrice = 0.05;
                         giftNoodle.id = "GIFT001";
 
                         MerchandiseV2 giftBowl = new MerchandiseV2();
                         giftBowl.name = "赠品-碗";
                         giftBowl.count = 2000;
                         giftBowl.purchasePrice = 8;
-                        giftBowl.soldprice = 0.08;
+                        giftBowl.soldPrice = 0.08;
                         giftBowl.id = "GIFT002";
 
                         for (int i = 0; i < all.length; i++) {
@@ -33,9 +33,9 @@ public class RunLittleSupperMarketAppMainV2 {
                                 m.id = "ID" + i;
                                 m.name = "商品" + i;
                                 m.purchasePrice = Math.random() * 200;
-                                m.soldprice = (1 + Math.random()) * m.purchasePrice;
+                                m.soldPrice = (1 + Math.random()) * m.purchasePrice;
                                 all [i] = m;
-                                m.describ();
+                                m.describe();
                         }
                         int index = 0;
 
@@ -46,11 +46,11 @@ public class RunLittleSupperMarketAppMainV2 {
 
                         m.gift = giftBowl;
                         System.out.println("gift变换大法执行前");
-                        m.describ();
-                        paramRef.describ();
+                        m.describe() ;
+                        paramRef.describe();
                         m.changeToTheSameGift(paramRef);
                         System.out.println("gift变换大法执行后");
-                        paramRef.describ();
+                        paramRef.describe();
 
                         // >> TODO 给返回值赋值，并不会影响用来充当返回值的变量
 
@@ -60,11 +60,11 @@ public class RunLittleSupperMarketAppMainV2 {
 
                         System.out.println("获取m的赠品，并修改这个赠品对象的采购价格");
                         System.out.println("修改前");
-                        m.describ();
+                        m.describe();
                         giftOfM = m.getGiftAndHowCanOutsideChangeIt();
                         giftOfM.purchasePrice = giftOfM.purchasePrice * 10;
                         System.out.println("修改后");
-                        m.describ();
+                        m.describe();
                 }
 
 

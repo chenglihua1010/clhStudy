@@ -28,7 +28,8 @@ public class MerchandiseV2 {
                         return null;
                 }
                 return new MerchandiseV2(name,id,count,soldprice,purchanseprice);
-        }*/
+        }*//*
+
 
 
 
@@ -100,7 +101,8 @@ public class MerchandiseV2 {
                 return (int) soldprice;
         }
 
-        /*    public double buy(int countToBuy){
+        */
+/*    public double buy(int countToBuy){
                     if (count<countToBuy ){
                             System.out.println("商品库存不够");
                             return -1;
@@ -115,7 +117,8 @@ public class MerchandiseV2 {
 
                     return totalCost ;
             }
-            */
+            *//*
+
         public double buyAndPrintLeft(int countToBuy, boolean printLeft) {
                 if (count < countToBuy) {
                         System.out.println("商品库存不够");
@@ -162,14 +165,10 @@ public class MerchandiseV2 {
                 this.count = count ;
                 System.out.println("Merchandise V2的addCount方法使用的对象是："+this );
         }
-        public boolean hasEnoughCountFor(int count) {
-                System.out.println("MerchandiseV2的hasEnoughCountFor方法使用的对象是：" + this);
-
-                return this.count >= count;
-        }
 
 
-     /*   public double buyOne(){
+     */
+/*   public double buyOne(){
                 int  count = 1;
                 if (this.count <count){
                         return -1;
@@ -196,9 +195,11 @@ public class MerchandiseV2 {
                         return totalCost ;
                 }
         }
-        */
+        *//*
 
-        /*public double buy() {
+
+        */
+/*public double buy() {
                 return buy(1);
         }
 
@@ -217,7 +218,8 @@ public class MerchandiseV2 {
                 } else {
                         return cost;
                 }
-        }*/
+        }*//*
+
         public MerchandiseV2 gift;
 
         public double getSoldPrice() {
@@ -264,4 +266,141 @@ public class MerchandiseV2 {
         }
 
 
+}*/
+public String name;
+        public String id;
+        public int count;
+        public double soldPrice;
+        public double purchasePrice;
+
+        public void addCount (int count ){
+                //>>TODO 方法里隐藏着一个this自引用，指向调用这个方法的对象
+                //>>TODO 使用一个对象调用方法，也叫做在这个对象上调用方法。因为方法可以访问到这个对象的值
+                //>>TODO 访问一个成员变量的完整形态，是“this.成员变量的名字“
+                this.count = count ;
+                System.out.println("Merchandise V2的addCount方法使用的对象是："+this );
+        }
+        public MerchandiseV2 gift;
+
+        public MerchandiseV2 getGiftAndHowCanOutsideChangeIt() {
+                return gift;
+        }
+
+
+        public void willOutsideValueChangeIfParameterValueChangeHereRef(MerchandiseV2 m2) {
+                m2 = gift;
+        }
+
+        public void willOutsideValueChangeIfParameterValueChangeHerePrime(int intVal) {
+                intVal = 99999999;
+        }
+
+        public void changeToTheSameGift(MerchandiseV2 m2) {
+                m2.gift = gift;
+        }
+
+
+        public boolean hasEnoughCountFor(int count) {
+                System.out.println("MerchandiseV2的hasEnoughCountFor方法使用的对象是：" + this);
+
+                return this.count >= count;
+        }
+        public double calculatePorfit() {
+                double profit = soldPrice - purchasePrice;
+
+                if (profit <= 0) {
+                        return 0;
+                        // return 语句必须是所在代码块的最后一个语句，类似break语句
+                }
+                return profit;
+
+        }
+        public MerchandiseV2(String name, String id, int count, double soldPrice, double purchansePrice) {
+                this.name = name;
+                this.id = id;
+                this.count = count;
+                this.soldPrice = soldPrice;
+                this.purchasePrice = purchansePrice;
+
+        }
+
+        public MerchandiseV2() {
+
+
+        }
+
+//        public MerchandiseV2(String name, String id, int count, double soldPrice) {
+//
+//                this(name, id, count, soldPrice, soldPrice * 0.8);
+//
+//        }
+//
+//        public MerchandiseV2() {
+//                this("无名", "000", 0, 1, 1.1);
+//
+//        }
+
+        public void describe() {
+                System.out.println("商品名字叫做" + name + "，id是" + id + "。 商品售价是" + soldPrice
+                                + "。商品进价是" + purchasePrice + "。商品库存量是" + count +
+                                "。销售一个的毛利润是" + (soldPrice - purchasePrice));
+        }
+
+        public double calculateProfit() {
+                double profit = soldPrice - purchasePrice;
+//        if(profit <= 0){
+//            return 0;
+//        }
+                return profit;
+        }
+
+        public double buy(int count) {
+                if (this.count < count) {
+                        return -1;
+                }
+                this.count -= count;
+
+                return count * soldPrice;
+        }
+
+
+        public String getName() {
+                return name;
+        }
+
+        public void setName(String name) {
+                this.name = name;
+        }
+
+        public String getId() {
+                return id;
+        }
+
+        public void setId(String id) {
+                this.id = id;
+        }
+
+        public int getCount() {
+                return count;
+        }
+
+        public void setCount(int count) {
+                this.count = count;
+        }
+
+        public double getSoldPrice() {
+                return soldPrice;
+        }
+
+        public void setSoldPrice(double soldPrice) {
+                this.soldPrice = soldPrice;
+        }
+
+        public double getPurchasePrice() {
+                return purchasePrice;
+        }
+
+        public void setPurchasePrice(double purchasePrice) {
+                this.purchasePrice = purchasePrice;
+        }
 }

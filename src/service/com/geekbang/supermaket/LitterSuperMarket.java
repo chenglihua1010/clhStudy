@@ -24,7 +24,7 @@ public class LitterSuperMarket {
                         m.name = "商品" + i;
                         m.count = count;
                         m.purchasePrice = Math.random() * 200;
-                        m.soldprice = m.purchasePrice * (1 + Math.random());
+                        m.soldPrice = m.purchasePrice * (1 + Math.random());
                         m.id = "ID" + i;
                         merchandises[i] = m;
 
