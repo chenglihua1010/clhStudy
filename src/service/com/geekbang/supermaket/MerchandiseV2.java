@@ -267,7 +267,7 @@ public class MerchandiseV2 {
 
 
 }*/
-public String name;
+        public String name;
         public String id;
         public int count;
         public double soldPrice;
@@ -325,6 +325,7 @@ public String name;
         }
 
         public MerchandiseV2() {
+                this ("无名","000",0,1,1.1);
 
 
         }
@@ -343,7 +344,7 @@ public String name;
         public void describe() {
                 System.out.println("商品名字叫做" + name + "，id是" + id + "。 商品售价是" + soldPrice
                                 + "。商品进价是" + purchasePrice + "。商品库存量是" + count +
-                                "。销售一个的毛利润是" + (soldPrice - purchasePrice));
+                                "。销售一个的毛利润是" + calculatePorfit() );
         }
 
         public double calculateProfit() {

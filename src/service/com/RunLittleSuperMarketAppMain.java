@@ -9,7 +9,8 @@ import java.util.Scanner;
 
         public class RunLittleSuperMarketAppMain {
         public static void main(String[] args) {
-                LitterSuperMarket littleSuperMarket = new LitterSuperMarket();
+                LitterSuperMarket littleSuperMarket = new LitterSuperMarket("大卖场",
+                                "世纪大道1号", 500, 600, 100);
                 littleSuperMarket.address = "世纪大道666号";
                 littleSuperMarket.supermaketName = "有家超市";
                 littleSuperMarket.parkingCount = 200;
