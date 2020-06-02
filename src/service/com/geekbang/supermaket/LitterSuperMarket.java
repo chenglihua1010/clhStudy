@@ -1,7 +1,5 @@
 package service.com.geekbang.supermaket;
 
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
-
 public class LitterSuperMarket {
         public String supermaketName;
         public String address;
@@ -64,6 +62,22 @@ public class LitterSuperMarket {
                 }
                 merchandiseSold = new int[merchandises.length];
         }
+        //TODO 只循环遍历，不赋值，不跳跃访问，不需要知道当前元素第几个
+        public double  getBiggestPurchasePrice(){
+                double maxPurchasePrice= -1;
+
+                for (MerchandiseV2 m:merchandises ){
+                        if (m.getPurchasePrice() >maxPurchasePrice ) {
+                                maxPurchasePrice = m.getPurchasePrice() ;
+
+                        }
+                }
+                return maxPurchasePrice ;
+
+
+        }
+
+
 
         public String getSupermaketName() {
                 return supermaketName;

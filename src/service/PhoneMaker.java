@@ -2,7 +2,7 @@ package service;
 
 public class PhoneMaker {
         public static void main(String[] args) {
-                Phone phone= new Phone();
+                Phone phone= new Phone("","",0,0,0,0,0,0,0,"","");
 
                 phone .hasFigurePrintUnlocker =true;
                 phone .price =1999;
@@ -33,7 +33,7 @@ public class PhoneMaker {
                 phone .mainboard .year= 2019;
                 phone.mainboard .model = "EA888";
 
-                phone.prephone =new Phone() ;
+                phone.prephone =new Phone("","",0,0,0,0,0,0,0,"","") ;
 
 
 

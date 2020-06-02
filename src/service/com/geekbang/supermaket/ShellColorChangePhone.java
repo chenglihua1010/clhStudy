@@ -38,6 +38,13 @@ public class ShellColorChangePhone extends Phone {
         }
 
         public static void staticNoOerrride(){
+
                 System.out.println("staticNoOerrride in ShellColorChangePhone");
         }
+
+        public static void staticMethod(){
+                System.out.println("staticMethod in ShellColorChangePhone");
+
+        }
+
 }

@@ -102,6 +102,11 @@ public class Phone  extends MerchandiseV2 {
                 super.describe() ;
                 super .buy(22) ;
                 System.out.println(""+super .count );
+                System.out.println("赠品信息为：");
+                gift.describe();
+        }
+        public MerchandiseV2 getGift() {
+                return gift;
         }
 
 
@@ -155,6 +160,11 @@ public class Phone  extends MerchandiseV2 {
 
         public boolean meetCondition(){
                 return true;
+
+        }
+
+        public static void staticMethod(){
+                System.out.println("staticMethod in Phone");
 
         }
 

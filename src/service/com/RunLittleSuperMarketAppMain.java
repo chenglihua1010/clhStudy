@@ -42,6 +42,8 @@ import java.util.Scanner;
                         m.addCount(toBeAdd);
                 }
         }
+
+
         }
 // //①  程序（求最大利润）
 //                LitterSuperMarket litterSuperMarket =new LitterSuperMarket() ;

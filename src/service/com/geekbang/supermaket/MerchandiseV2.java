@@ -404,4 +404,10 @@ public class MerchandiseV2 {
         public void setPurchasePrice(double purchasePrice) {
                 this.purchasePrice = purchasePrice;
         }
+
+        public static void staticMethod(){
+                System.out.println("staticMethod in MerchandiseV2");
+
+        }
+
 }
