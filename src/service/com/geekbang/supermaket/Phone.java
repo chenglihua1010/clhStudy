@@ -72,9 +72,9 @@ public class Phone  extends MerchandiseV2 {
         //TODO 方法可以覆盖，属性访问不可以，所以这也是使用方法的一个原因
         //TODO 即使在父类里，只是简单的getName,但是这样做，子类就可以覆盖掉父类的方法
         //TODO 方法不止眼前的代码，还有子类的覆盖。用方法，才能覆盖，多态
-        public String getName(){
-                return this.brand +":"+this.os +":"+name ;
-        }
+//        public String getName(){
+//                return this.brand +":"+this.os +":"+name ;
+//        }
         //TODO 根据我们对覆盖的理解，Phone类里的decribePhone方法应该叫作describe
         //TODO 同样的，我们可以调用父类的describe方法
 //        public void describePhone(){
@@ -164,7 +164,7 @@ public class Phone  extends MerchandiseV2 {
         }
 
         public static void staticMethod(){
-                System.out.println("staticMethod in Phone");
+                System.out.println("staticMethod in ");
 
         }
 

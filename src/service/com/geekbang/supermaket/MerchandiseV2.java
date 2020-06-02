@@ -364,6 +364,50 @@ public class MerchandiseV2 {
                 return count * soldPrice;
         }
 
+        //TODO hashCode和equals是最常覆盖的两个方法
+        //TODO 覆盖的原则是，equals为true，hasCode就应该相等
+        //TODO 即equals为true是hasCode相等的充分非必要条件，hasCode相等时equals为true的必要不充分条件
+//        @Override
+//        public boolean equals(Object o) {
+//                if (this == o) return true;
+//                if (!(o instanceof MerchandiseV2)) return false;
+//                MerchandiseV2 that = (MerchandiseV2 )  o ;
+//                return this.getCount() ==that .getCount() &&
+//                        Double.compare(that.getSoldPrice(), getSoldPrice()) == 0 &&
+//                        Double.compare(that.getPurchasePrice(), getPurchasePrice()) == 0 &&
+//                        getName().equals(that.getName()) &&
+//                        getId().equals(that.getId());
+//        }
+
+
+        @Override
+        public boolean equals(Object o) {
+                if (this == o) return true;
+                if (!(o instanceof MerchandiseV2)) return false;
+
+                MerchandiseV2 that = (MerchandiseV2) o;
+
+                if (getCount() != that.getCount()) return false;
+                if (Double.compare(that.getSoldPrice(), getSoldPrice()) != 0) return false;
+                if (Double.compare(that.getPurchasePrice(), getPurchasePrice()) != 0) return false;
+                if (!getName().equals(that.getName())) return false;
+                return getId().equals(that.getId());
+
+        }
+
+        @Override
+        public int hashCode() {
+                int result;
+                long temp;
+                result = getName().hashCode();
+                result = 31 * result + getId().hashCode();
+                result = 31 * result + getCount();
+                temp = Double.doubleToLongBits(getSoldPrice());
+                result = 31 * result + (int) (temp ^ (temp >>> 32));
+                temp = Double.doubleToLongBits(getPurchasePrice());
+                result = 31 * result + (int) (temp ^ (temp >>> 32));
+                return result;
+        }
 
         public String getName() {
                 return name;

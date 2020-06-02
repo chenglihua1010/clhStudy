@@ -62,6 +62,19 @@ public class LitterSuperMarket {
                 }
                 merchandiseSold = new int[merchandises.length];
         }
+
+        public boolean findMerchandise(MerchandiseV2 target){
+                int i = 0 ;
+                for (MerchandiseV2 m:merchandises ){
+                        boolean match =m.equals(target);
+                        if (match){
+                                System.out.println("找到商品，位置在"+i);
+                                return true ;
+                        }
+                        i++;
+                }
+                return false ;
+        }
         //TODO 只循环遍历，不赋值，不跳跃访问，不需要知道当前元素第几个
         public double  getBiggestPurchasePrice(){
                 double maxPurchasePrice= -1;
