@@ -1,4 +1,6 @@
-package service.com.geekbang.supermaket;
+package service.wwtest;
+
+import service.com.geekbang.supermaket.AppleClass;
 
 public class FirutClass {
         public static void main(String[] args) {

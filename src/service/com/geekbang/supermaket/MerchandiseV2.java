@@ -282,6 +282,7 @@ public class MerchandiseV2 {
         }
         public MerchandiseV2 gift;
 
+
         public MerchandiseV2 getGiftAndHowCanOutsideChangeIt() {
                 return gift;
         }

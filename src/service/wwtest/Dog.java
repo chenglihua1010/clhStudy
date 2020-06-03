@@ -1,11 +1,11 @@
-package service.com.geekbang.supermaket;
+package service.wwtest;
 
 public class Dog {
         public static String type;
         public static String color;
         public static String age;
 
-        //预加载，static8静态代码块
+        //预加载，static静态代码块
         static
         {
                 type="金毛";
