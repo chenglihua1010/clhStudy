@@ -273,6 +273,10 @@ public class MerchandiseV2 {
         public double soldPrice;
         public double purchasePrice;
 
+        public static String STATIC_MEMBER= "Common Merdianse";
+
+
+
         public void addCount (int count ){
                 //>>TODO 方法里隐藏着一个this自引用，指向调用这个方法的对象
                 //>>TODO 使用一个对象调用方法，也叫做在这个对象上调用方法。因为方法可以访问到这个对象的值
