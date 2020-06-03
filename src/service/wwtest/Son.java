@@ -2,12 +2,12 @@ package service.wwtest;
 
 public class Son extends Father{
         public void myWork(){
-                System.out.println("程序员");
+                System.out.println("我是第一个儿子，我的工作是程序员");
         }
 
 
         public void myAge(){
-                System.out.println(25);
+                System.out.println("我是第一个儿子，我的年龄是25岁");
         }
         public static void main(String[] args) {
                 //继承，申明用Father，实例对象用Son
