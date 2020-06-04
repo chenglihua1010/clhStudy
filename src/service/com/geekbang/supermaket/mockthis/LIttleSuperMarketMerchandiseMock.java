@@ -1,6 +1,6 @@
 package service.com.geekbang.supermaket.mockthis;
 
-public class LittleSuperMarketMerchandiseMock {
+public class LIttleSuperMarketMerchandiseMock {
         public class LittleSuperMarketWithMerchandiseMock {
                 public String superMarketName;
                 public String address;
