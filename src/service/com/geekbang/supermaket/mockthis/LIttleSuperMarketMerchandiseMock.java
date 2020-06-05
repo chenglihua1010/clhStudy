@@ -1,7 +1,6 @@
 package service.com.geekbang.supermaket.mockthis;
 
-public class LIttleSuperMarketMerchandiseMock {
-        public class LittleSuperMarketWithMerchandiseMock {
+class LittleSuperMarketWithMerchandiseMock {
                 public String superMarketName;
                 public String address;
                 public int parkingCount;
@@ -21,4 +20,3 @@ public class LIttleSuperMarketMerchandiseMock {
                         return curr;
                 }
         }
-}

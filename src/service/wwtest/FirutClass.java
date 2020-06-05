@@ -1,7 +1,5 @@
 package service.wwtest;
 
-import service.com.geekbang.supermaket.AppleClass;
-
 public class FirutClass {
         public static void main(String[] args) {
 //                AppleClass appleClass1=new AppleClass();

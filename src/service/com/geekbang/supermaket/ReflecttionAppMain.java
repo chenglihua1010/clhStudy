@@ -10,26 +10,36 @@ public class ReflecttionAppMain {
                                 "世纪大道1号", 500, 600, 100);
                 MerchandiseV2 m100 = superMarket.getMerchandiseOf(100);
 
-                Class clazz = MerchandiseV2 .class ;
+                Class clazz = MerchandiseV2.class ;
 
-//                Field countFiled = clazz .getField("count") ;
-//                System.out.println(countFiled .getName() );
-//                countFiled .set(m100,999);
-//                System.out.println(countFiled .get(m100) );
-//                System.out.println(m100.count );
+                //获取所有的变量
+                Field[] fields=clazz.getFields();
+                System.out.println(fields.toString());
 
-//                printFields(clazz);
-//
-//                Field field = clazz .getField("STATIC_MEMBER");
-//                System.out.println(field .get(null) );
-//
-//                Method desMethod = clazz.getMethod("describe ");
-//                desMethod .invoke(m100);
-//                Method staticMethod = clazz.getMethod("getNamrOf" ,MerchandiseV2 .class );
-//                String str = (String)  staticMethod .invoke(null,m100);
-//                System.out.println(str);
+                //获取某一个变量
+                Field countFiled = clazz .getField("count");
+                System.out.println(countFiled .getName() );
 
-                m100.buy(10);
+                //给count变量赋值
+                countFiled .set(m100,999);
+                System.out.println(countFiled .get(m100) );
+                System.out.println(m100.count );
+
+                printFields(clazz);
+
+                Field field = clazz .getField("STATIC_MEMBER");
+                System.out.println(field .get(null) );
+
+                Method desMethod = clazz.getMethod("describe");
+                desMethod.invoke(m100);
+
+                System.out.println(desMethod.toString());//
+
+                Method staticMethod = clazz.getMethod("getName");
+                String str = (String) staticMethod.invoke(m100);
+                System.out.println(str);
+
+            //    m100.buy(10);
 
 
 
@@ -44,9 +54,15 @@ public class ReflecttionAppMain {
         }
                 public static void printFields(Class clazz ){
                 System.out.println(clazz .getName() +"里的field");
-                for (Field field :clazz.getFields() ){
-                        System.out.println(field .getType() +""+field .getName() );
-                }
+//                for (Field field :clazz.getFields() ){
+//                        System.out.println(field .getType() +""+field .getName() );
+//                }
+
+                        Field[] fields=clazz.getFields();
+                 for(int i =0 ;i<fields.length;i++){
+
+                         System.out.println(fields[i].getType()+" "+fields[i].getName());
+                 }
         }
 
 }

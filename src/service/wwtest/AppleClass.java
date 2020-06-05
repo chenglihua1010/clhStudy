@@ -1,4 +1,4 @@
-package service.com.geekbang.supermaket;
+package service.wwtest;
 
 public class AppleClass {
         public  String color;

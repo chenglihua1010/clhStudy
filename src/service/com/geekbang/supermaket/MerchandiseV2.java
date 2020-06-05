@@ -329,6 +329,13 @@ public class MerchandiseV2 {
 
         }
 
+        public MerchandiseV2(String name, String id, int count, double soldPrice) {
+                this.name = name;
+                this.id = id;
+                this.count = count;
+                this.soldPrice = soldPrice;
+        }
+
         public MerchandiseV2() {
                 this ("无名","000",0,1,1.1);
 
@@ -347,7 +354,7 @@ public class MerchandiseV2 {
 //        }
 
         public void describe() {
-                System.out.println("商品名字叫做" + name + "，id是" + id + "。 商品售价是" + soldPrice
+                System.out.println("苹果手机商品名字叫做" + name + "，id是" + id + "。 商品售价是" + soldPrice
                                 + "。商品进价是" + purchasePrice + "。商品库存量是" + count +
                                 "。销售一个的毛利润是" + calculatePorfit() );
         }

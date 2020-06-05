@@ -17,7 +17,7 @@ public class VolatileTest {
 
         public static void main(String[] args) {
                 final VolatileTest volatileTest=new VolatileTest();
-               int a=1;
+                int a=1;
                 int b=2;
                 int c=a++;
                 int d=++a;

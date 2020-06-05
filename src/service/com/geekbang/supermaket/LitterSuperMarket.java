@@ -65,7 +65,7 @@ public class LitterSuperMarket {
 
         public boolean findMerchandise(MerchandiseV2 target){
                 int i = 0 ;
-                for (MerchandiseV2 m:merchandises ){
+                for (MerchandiseV2 m:merchandises){
                         boolean match =m.equals(target);
                         if (match){
                                 System.out.println("找到商品，位置在"+i);

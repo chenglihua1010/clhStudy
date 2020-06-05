@@ -2,19 +2,62 @@ package service.com.geekbang.supermaket;
 
 public class Phone  extends MerchandiseV2 {
         private double screenSize;
-        private double cpuHz;
-        private int memoryG;
+        private double cpu;
+        private static int memoryG;
         private int storageG;
         private String brand;
         private String os;
         private static int MAX_BUY_ONE_ORDER = 5;
 
+
+        //TODO 静态内部类，是在类中使用static修饰的类
+        //TODO 静态内部类，可以有访问控制符。静态内部类和静态方法，静态变量一样，都是类的静态组成部分
+        //TODO 静态内部类也是类，在继承，实现接口方面都是一样的
+        public static class CPU{
+                private double speed;
+                private String producer;
+
+                public CPU(double speed,String producer){
+                        this.speed=speed;
+                        this.producer=producer;
+                }
+
+                public double getSpeed(){
+                        //TODO 静态内部类，代码和这个类本身的访问权限一样，可以访问外部（Phone）的private属性
+                        //TODO 这并不是说它可以访问private变量
+                        //TODO 静态内部类是静态的，就好像静态方法一样，没有this引用，可以通过引用访问Phone对象的private属性
+                        Phone phone=null;
+                        Phone.memoryG=99;//???
+                        return speed;
+                }
+                public void setSpeed(double speed){
+                        this.speed=speed;
+                }
+                public String getProducer(){
+                        return producer;
+                }
+                public void setProducer(){
+                        this.producer=producer;
+                }
+
+                @Override
+                public String toString() {
+                        return "CPU{"+"speed"+speed+"，producer="+producer+"}";
+
+                        }
+                }
+//        public void accessStaticClass(){
+//              //  this.cpu.producer="";
+//        }
+
+
         public Phone(
                         String name, String id, int count, double soldPrice, double purchasePrice,
-                        double screenSize, double cpuHZ, int memoryG, int storageG, String brand, String os
+                        double screenSize, double cpuHz, int memoryG, int storageG, String brand, String os
         ) {
                 this.screenSize = screenSize;
-                this.cpuHz = cpuHz;
+                this.cpu = cpuHz;
+               // this.cpu=new CPU(cpuHz,"Default");
                 this.memoryG = memoryG;
                 this.storageG = storageG;
                 this.brand = brand;
@@ -83,7 +126,7 @@ public class Phone  extends MerchandiseV2 {
                 super.describe() ;
                 System.out.println("手机厂商为："+brand +"；系统为"+os+"：硬件配置如下：\n"+
                                 "屏幕：" + screenSize + "寸\n" +
-                                "cpu主频" + cpuHz + " GHz\n" +
+                                "cpu主频" + cpu + " GHz\n" +
                                 "内存" + memoryG + "Gb\n" +
                                 "存储空间" + storageG + "Gb");
         }
@@ -119,11 +162,11 @@ public class Phone  extends MerchandiseV2 {
         }
 
         public double getCpuHz() {
-                return cpuHz;
+                return cpu;
         }
 
         public void setCpuHz(double cpuHz) {
-                this.cpuHz = cpuHz;
+                this.cpu = cpuHz;
         }
 
         public int getMemoryG() {
