@@ -31,7 +31,7 @@ public class ColorTest {
                 Class clazz = color.getClass();
                 Method method = clazz.getMethod("getPrice", null);
                 //获取到不同对象的属性值来区分不同的实例对象
-                System.out.println(456);
+                System.out.println(456789);
 
                 //获取到Blue对象传进来的价格
                 Object object = method.invoke(color);
