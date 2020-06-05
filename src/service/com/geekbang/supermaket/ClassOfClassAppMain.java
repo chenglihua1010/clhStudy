@@ -14,12 +14,12 @@ public class ClassOfClassAppMain {
                 System.out.println(clazz.getName());
                 System.out.println(clazz.getSimpleName());
 
-//
-//                Field[] fields=clazz.getFields();
-//                System.out.println(fields.toString());
-//
-//                Field countFiled = clazz .getField("count");
-//                System.out.println(countFiled .getName() );
+
+                Field[] fields=clazz.getFields();
+                System.out.println(fields.toString());
+
+                Field countFiled = clazz .getField("count");
+                System.out.println(countFiled .getName() );
 
 
 
@@ -30,7 +30,7 @@ public class ClassOfClassAppMain {
 
                  Field pricetField = clazz.getField("id");
 
-   //          Method buyMethod = clazz.getMethod("buy");
+       //    Method buyMethod = clazz.getMethod("buy");
 
 
 //              Method euqalsMethod = clazz.getMethod("equals", Object.class);

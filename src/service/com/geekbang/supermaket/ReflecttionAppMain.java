@@ -18,7 +18,7 @@ public class ReflecttionAppMain {
 
                 //获取某一个变量
                 Field countFiled = clazz .getField("count");
-                System.out.println(countFiled .getName() );
+                System.out.println(countFiled .getName());
 
                 //给count变量赋值
                 countFiled .set(m100,999);
