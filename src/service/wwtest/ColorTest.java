@@ -19,7 +19,7 @@ public class ColorTest {
             Field[] fields = clazz.getFields();
             System.out.println(fields.toString());
 
-
+        System.out.println(123);
 
     }
 
