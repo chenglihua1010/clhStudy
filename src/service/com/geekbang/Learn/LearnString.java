@@ -15,11 +15,11 @@ public class LearnString {
                 System.out.println(content );
 
                 //索引从0开始
-                System.out.println(content .charAt(1) );//获取第二个字符
+                System.out.println(content .charAt(1));//获取第二个字符
 
-                System.out.println(content.substring(5) );//从（）开始截取（第六个）
+                System.out.println(content.substring(5));//从（）开始截取（第六个）
 
-                System.out.println(content .substring(1,5) );//截取第二个到第五个，不包含第五个
+                System.out.println(content .substring(1,5));//截取第二个到第五个，不包含第五个
 
                 String str = " abc";
                 String str2 ="a b c ";
