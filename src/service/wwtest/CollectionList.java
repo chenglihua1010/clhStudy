@@ -13,7 +13,7 @@ public class CollectionList {
         String d="d";
         String e="e";
 
-        //ArrayList集合
+        //ArrayList集合--数据结构为数组
         List<String> stringList=new ArrayList<String>();
         stringList.add(a);
         stringList.add(b);
@@ -21,7 +21,7 @@ public class CollectionList {
         stringList.add(d);
         stringList.add(e);
 
-        //LinkedList集合
+        //LinkedList集合--数据结构为双链表
         List<String> linkedList=new LinkedList<String>();
         linkedList.add(a);
         linkedList.add(b);
