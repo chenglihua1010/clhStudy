@@ -1,4 +1,4 @@
-package service.Exception;
+package service.com.Exception;
 
 public class TryFinallyAppMain {
         private static int VAL=0;

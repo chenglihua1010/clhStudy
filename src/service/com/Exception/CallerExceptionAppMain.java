@@ -1,7 +1,6 @@
-package service.Exception;
+package service.com.Exception;
 
-import com.sun.xml.internal.bind.v2.TODO;
-import service.Exception.MyException.MyException;
+import service.com.Exception.MyException.MyException;
 
 public class CallerExceptionAppMain {
 //        public static void main(String[] args) throws MyException {

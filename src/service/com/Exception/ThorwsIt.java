@@ -1,4 +1,4 @@
-package service.Exception;
+package service.com.Exception;
 
 public class ThorwsIt {
         //TODO 可以使用throws关键字，抛出一个异常

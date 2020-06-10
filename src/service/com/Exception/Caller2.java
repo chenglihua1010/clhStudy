@@ -1,6 +1,6 @@
-package service.Exception;
+package service.com.Exception;
 
-import service.Exception.MyException.MyException;
+import service.com.Exception.MyException.MyException;
 
 public class Caller2 {
         Caller3 caller3 = new Caller3();

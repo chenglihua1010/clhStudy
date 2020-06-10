@@ -1,4 +1,4 @@
-package service.Exception;
+package service.com.Exception;
 
 import java.io.IOException;
 

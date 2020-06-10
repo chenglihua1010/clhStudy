@@ -1,6 +1,6 @@
-package service.Exception;
+package service.com.Exception;
 
-import service.Exception.MyException.MyRuntimeException;
+import service.com.Exception.MyException.MyRuntimeException;
 
 public class CallerRtExceptionAppMain {
         public static void main(String[] args)  {

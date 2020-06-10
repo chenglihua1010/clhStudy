@@ -1,7 +1,7 @@
-package service.Exception;
+package service.com.Exception;
 
-import service.Exception.MyException.MyException;
-import service.Exception.MyException.MyRuntimeException;
+import service.com.Exception.MyException.MyException;
+import service.com.Exception.MyException.MyRuntimeException;
 
 public class Caller3 {
         public void callThrowRTException() {

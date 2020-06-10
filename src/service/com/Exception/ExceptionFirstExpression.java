@@ -1,4 +1,4 @@
-package service.Exception;
+package service.com.Exception;
 
 public class ExceptionFirstExpression {
         public static void main(String[] args) {

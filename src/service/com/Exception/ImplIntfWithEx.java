@@ -1,4 +1,4 @@
-package service.Exception;
+package service.com.Exception;
 
 public class ImplIntfWithEx implements IntWithEx{
         @Override

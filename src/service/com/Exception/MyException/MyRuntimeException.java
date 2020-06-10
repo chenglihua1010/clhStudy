@@ -1,4 +1,4 @@
-package service.Exception.MyException;
+package service.com.Exception.MyException;
 
 public class MyRuntimeException extends RuntimeException{
         public MyRuntimeException(){
