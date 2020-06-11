@@ -44,8 +44,19 @@ public class MyArryList implements List {
 
         @Override
         public Iterator iterator() {
-                throw new UnsupportedOperationException();
+                return new Iterator() {
+                        int pointer=0;
 
+                        @Override
+                        public boolean hasNext() {
+                                return pointer<size();
+                        }
+
+                        @Override
+                        public Object next() {
+                                return elements[pointer++];
+                        }
+                };
         }
 
         @Override
@@ -115,6 +126,8 @@ public class MyArryList implements List {
                 }
                 return elements[index];
         }
+
+
 
         @Override
         public Object set(int index, Object element) {

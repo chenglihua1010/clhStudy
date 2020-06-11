@@ -52,5 +52,8 @@ public class CollectionList {
 
 
 
+        List<? extends ColorEntity> stringList1=new ArrayList<ColorEntity>();
+        List<? super Blue> stringList12=new ArrayList<Blue>();
+
     }
 }
