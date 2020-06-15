@@ -26,6 +26,7 @@ public class CreatThreadAppMain {
         static class PrintStoryRunnable implements Runnable{
                 private String text;
                 private long interval;
+
                 public PrintStoryRunnable(String text,long interval){
                         this.text=text;
                         this.interval=interval;
@@ -43,6 +44,7 @@ public class CreatThreadAppMain {
                         }
                 }
         }
+
         public static void printSlowly(String text,long interval) throws InterruptedException {
                 for (char ch : text.toCharArray()) {
                         Thread.sleep(interval);
