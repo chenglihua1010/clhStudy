@@ -11,7 +11,7 @@ public class LockTest extends Thread{
     private Object object=new Object();
     private Integer integer=new Integer(1);
     private Lock lock=new ReentrantLock();
-    private ReentrantLock reentrantLock=new ReentrantLock();
+    private ReentrantLock reentrantLock=new ReentrantLock(true);
 
 
 

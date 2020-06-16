@@ -2,7 +2,7 @@ package service.com.geekbang.producerconsumer;
 
 import java.util.Queue;
 
-public class Consumer<T>{
+public class Consumer<T> {
         private Queue<T>tasks;
 
         public Consumer(Queue<T> tasks){
